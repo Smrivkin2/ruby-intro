@@ -4,16 +4,55 @@
 
 # In Ruby, there are different *types* of data:
 
-# Numbers
+# # Numbers, required to put a space after "put"
+# puts 3
+# puts 5
 
-# Perform simple math with numbers
+# # Perform simple math with numbers
+# puts 5 + 2
+# puts 5 - 2
+# puts 5 * 2
+# puts 5 / 2
 
-# Strings
+# # Integers vs Floats
+# puts 6.0 / 9.0
 
-# Combine strings together
+# # Order of Operations
+# puts (2 + 5) * 5
 
-# Variables
+# # Strings
+# puts "Hello, world!"
 
-# Combine strings and variables
+# # Combine strings together
+# puts "Tacos are " + "delish"
+# puts "tacos" * 3
+# puts "tacos" + 3.to_s
 
-# String manipulation
+# # Variables - variable name = what the variable is, can reassign a variable and it will override
+# a = 10
+# b = 3
+# a = 7
+# puts a * b
+
+food = "tacos"
+quantity = 3
+puts food * quantity
+
+# Combine strings and variables, cannot have space in variable names (use _), and no capitals, first character is a letter
+first_name = "Boba"
+last_name = "Fett"
+# greeting = "Hello, " + first_name
+greeting = "Hello, #{first_name} #{last_name}" # string interpolation
+puts greeting
+
+# puts "tacos #{3}"
+puts "#{food} #{quantity}"
+
+
+# String manipulation, can add . with certain built-in commands
+puts "Hello".reverse
+puts "Hello".length
+
+creed = "This Is The Way"
+puts creed.upcase
+puts creed.downcase

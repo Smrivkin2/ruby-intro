@@ -25,3 +25,27 @@
 # "i would like #{5} tacos"
 # We can specify multiple conditions with || (OR) and && (AND)
 # if dinner == "tacos" || dinner == "pizza"
+
+# first die
+die1 = rand(1..6)
+puts die1
+
+# second die
+die2 = rand(1..6)
+puts die2
+
+# calculate the total
+total = die1 + die2
+puts "Total is: #{total}"
+
+# if total is 7, 11 - WIN
+
+if total == 7 || total == 11
+    puts "YOU WIN!"
+# if total is 2, 4, 12 - LOST
+elsif total == 2 || total == 3 || total == 12
+    puts "YOU LOSE!"
+# otherwise, the point is the total 
+else 
+    puts "THE POINT IS #{total}"
+end
